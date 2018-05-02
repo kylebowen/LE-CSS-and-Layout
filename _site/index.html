@@ -3,7 +3,12 @@
   <head>
   <title>Test Page: Don't Panic</title>
   <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans|Raleway:thin|Oswald:light"
+        rel="stylesheet">
   <link rel="stylesheet" href="/css/reset.css">
+  <link rel="stylesheet"
+        href="/fonts/fontawesome-free-5.0.10/web-fonts-with-css/css/fontawesome-all.css">
   <link rel="stylesheet" href="/css/main.css">
   <style></style>
 </head>
@@ -11,11 +16,22 @@
   <body>
     <header class="header">
   <nav>
+    <input type="checkbox" id="mobile-menu" class="mobile-menu-check">
+    <label for="mobile-menu" class="show-mobile-menu">Menu</label>
     <ul class="header-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="#">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the second post title</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 
     </ul>
   </nav>
@@ -32,13 +48,19 @@
       <h1>CODE DANGEROUSLY</h1>
       <ul class="social-list social-hero">
         <li>
-  <a href="http://example.com/" class="social-link">Fb</a>
+  <a href="https://facebook.com/learnenough" class="social-link">
+    <span class="fab fa-facebook"></span>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Tw</a>
+  <a href="https://twitter.com/learnenough" class="social-link">
+    <span class="fab fa-twitter"></span>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Gh</a>
+  <a href="https://github.com/learnenough" class="social-link">
+    <span class="fab fa-github"></span>
+  </a>
 </li>
 
       </ul>
@@ -79,6 +101,39 @@
   </div>
 
   <div class="home-section">
+    <h4>Most recent post</h4>
+    <div class="blog-posts">
+      <header class="post-header">
+        <h2>
+          <a href="/2016/11/04/title-of-second-post.html">
+          This is the second post title</a>
+        </h2>
+        <div class="post-byline">
+          <img src="https://gravatar.com/avatar/0c986025e8bbc5f28a08d653c3fc96af?s=150"
+               alt="Gravatar for Kyle Bowen">
+          <a href="http://twitter.com/mysdirector" class="social-link">
+            <span class="fab fa-twitter"></span>
+          </a>
+          by: Kyle Bowen
+          <span> - November 04, 2016</span>
+        </div>
+      </header>
+      <div class="posts-image"
+           style="background-imagae:url(/images/hammerhead.jpg)"></div>
+      <p>Whenever I find myself growing grim about the mouth; whenever it is a damp,
+drizzly November in my soul; whenever I find myself involuntarily pausing
+before coffin warehouses, and bringing up the rear of every funeral I meet;
+and especially whenever my hypos get such an upper hand of me, that it
+requires a strong moral principle to prevent me from deliberately stepping
+into the street, and methodically knocking people’s hats off—then, I
+account it high time to get to sea as soon as I can. This is my substitute
+for pistol and ball.</p>
+
+
+    </div>
+  </div>
+
+  <div class="home-section">
     <h2>THE FOUNDERS</h2>
     <p>
       Learn Enough to Be Dangerous was founded in 2015 by Michael Hartl, Lee Donahoe, and Nick Merwin. We believe that the kind of technical sophistication taught in the Learn Enough tutorials can benefit at least a billion people, and probably more.
@@ -89,7 +144,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Michael Hartl</h3>
         <a href="http://twitter.com/mhartl" class="social-link">
-          Tw
+          <span class="fab fa-twitter"></span>
         </a>
         <div class="bio-copy">
           <p>
@@ -113,7 +168,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Lee Donahoe</h3>
         <a href="https://twitter.com/leedonahoe" class="social-link">
-          Tw
+          <span class="fab fa-twitter"></span>
         </a>
         <div class="bio-copy">
           <p>
@@ -128,7 +183,7 @@
         <img src="http://placekitten.com/g/400/400">
         <h3>Nick Merwin</h3>
         <a href="https://twitter.com/nickmerwin" class="social-link">
-          Tw
+          <span class="fab fa-twitter"></span>
         </a>
         <div class="bio-copy">
           <p>
@@ -152,20 +207,35 @@
     <ul class="footer-nav nav-links">
       <li><a href="/">Home</a></li>
 <li><a href="/gallery">Gallery</a></li>
-<li><a href="#">Nav 2</a></li>
-<li><a href="#">Nav 3</a></li>
+<li class="dropdown">
+  <a class="drop-trigger" href="/blog">Blog</a>
+  <ul class="drop-menu">
+    <li>Recent Posts</li>
+    
+      <li><a href="/2016/11/04/title-of-second-post.html">This is the second post title</a></li>
+    
+      <li><a href="/2016/11/03/title-of-post.html">This is the title of the post</a></li>
+    
+  </ul>
+</li>
 
     </ul>
   </nav>
   <div class="social-list social-footer">
     <li>
-  <a href="http://example.com/" class="social-link">Fb</a>
+  <a href="https://facebook.com/learnenough" class="social-link">
+    <span class="fab fa-facebook"></span>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Tw</a>
+  <a href="https://twitter.com/learnenough" class="social-link">
+    <span class="fab fa-twitter"></span>
+  </a>
 </li>
 <li>
-  <a href="http://example.com/" class="social-link">Gh</a>
+  <a href="https://github.com/learnenough" class="social-link">
+    <span class="fab fa-github"></span>
+  </a>
 </li>
 
   </div>

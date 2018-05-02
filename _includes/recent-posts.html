@@ -1,0 +1,14 @@
+{% for post in site.posts limit:5 %}
+  <li>
+    <div>
+      <a href="{{ post.url }}">{{ post.title }}</a>
+    </div>
+    <div class="list-gravatar">
+      <img src="{{ post.gravatar }}" alt="Gravatar for {{ post.author }}">
+    </div>
+    <div>
+      <span>By: {{ post.author }}</span>
+      <span>Posted: {{ post.date | date: '%B %d, %Y' }}</span>
+    </div>
+  </li>
+{% endfor %}
